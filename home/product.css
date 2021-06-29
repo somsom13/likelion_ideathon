@@ -83,9 +83,6 @@
   max-height: 100%;
 }
 
-
-
-
 .feature-text{
   display:inline-block;
   vertical-align: middle;
@@ -96,6 +93,10 @@
 .subText{
   margin-top:20px;
   max-width: 600px;
+}
+
+.end-title-text{
+  color:#fff;
 }
 
 /*
@@ -144,21 +145,12 @@
 }
 
 #end-block{
-  background-image: url(../img/black.jpg);
+  background-image: url(../img/black-cover.png);
   background-repeat: no-repeat;
   background-position: right center;
   background-size: cover;
 }
 
-#end-subTitle{
-  color:#fff;
-}
-
-.test{
-  font-size:60px;
-  text-align:center;
-  color:black;
-}
 
 
 
