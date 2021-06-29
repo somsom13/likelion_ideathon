@@ -7,6 +7,7 @@
     <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
     <meta name="generator" content="Hugo 0.84.0">
     <title>Daddy를 Dandy하게</title>
+    <link rel="icon" href="../img/logo2_3line.png">
 
     <link rel="canonical" href="https://getbootstrap.com/docs/5.0/examples/product/">
 
@@ -37,47 +38,44 @@
     <!-- header : nav bar -->
     <header class="site-header sticky-top py-1" >
       <nav class="container d-flex flex-column flex-md-row justify-content-between" >
-        <a class="py-2 d-none d-md-inline-block" href="#">
-          <img src="../main/050-play.png" alt="Icon" width="30" height="30">
+        <a class="py-2 d-none d-md-inline-block main-logo-div" href="#">
+          <img src="../img/logo1-main.png" id="main_logo" alt="메인로고" height="30">
         </a>
-          <div class="nav col-lg-auto me-lg-auto mb-2 mb-md-0">
-            <a class="px-2 d-none d-md-inline-block nav-link nav-menu" href="#" style="margin-left: 20px;">Product</a>
-            <a class="px-2 d-none d-md-inline-block nav-link nav-menu" href="#">Features</a>
-            <a class="px-2 d-none d-md-inline-block nav-link nav-menu" href="#">Stylists</a>
-            <a class="px-2 d-none d-md-inline-block nav-link nav-menu" href="#">About</a>
-            
+          <div class="nav col-lg-auto me-lg-auto mb-2 mb-md-0 nav-div">
+            <a class="px-2 d-none d-md-inline-block nav-link nav-menu" href="#" style="margin-left: 20px;">Brand Story</a>
+            <a class="px-2 d-none d-md-inline-block nav-link nav-menu" href="#">Stylists</a>     
           </div>
           <div id="search-div">
           <form id="search-form">
             <input type="search-input" class="form-control" placeholder="Search..." aria-label="Search">
           </form>
           </div>
-          <a class="py-2 d-none d-md-inline-block nav-link"  href="#">Join/Login</a>
+          <a class="py-2 d-none d-md-inline-block nav-link nav-menu" style="margin-left:0px;" href="#">Join/Login</a>
           <a class="py-2 d-none d-md-inline-block" href="#">
-            <img src="../main/011-user.png" alt="마이페이지" width="30" height="30"></a>
+            <img src="../img/011-user.png" alt="마이페이지" width="30" height="30"></a>
           
       </nav>
     </header>
 
 <main>
   <div class="position-relative overflow-hidden p-3 p-md-5 m-md-3 text-center bg-light" id="title-block">
-    <div class="col-md-6 p-lg-5 mx-auto my-5">
-      <h1 class="display-4 fw-bold">Daddy를 Dandy하게</h1>
-      <p class="lead fw-normal">부연설명 어쩌구 저쩌구</p>
-      <a class="newBtn" href="#">지금 시작하기</a>
+    <div class="col-md-6 p-lg-5 mx-auto my-5" id="title-block-text-div" >
+      <h1 class="display-4 fw-bold title-text" id="main-title-text">Daddy를<br> <span style="color:rgb(0,255,255);">Dandy</span>하게</h1>
+      <p class="lead title-text" id="main-title-subtext" style="margin-top:25px;">아버지를 위한 패션 스타일링, <br>지금 댄디와 함께 하세요!</p>
+      <a class="newBtn title-text" href="#" style="margin-left:100px;">지금 시작하기</a>
     </div>   
   </div>
 
   <!--아래부터는 feature block, 배경 색상 없애려면 bg-light 지우기-->
   <div class="d-md-flex flex-md-equal w-100 my-md-3 ps-md-3">
     <div class="bg-light me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden" >
-      <div class="my-3 p-3">
-       <h2 class="display-6">기능성티 멈춰!</h2>
-       <p class="lead subText" >아빠 이제 기능성티는 그만 입으세요!!!!! </p>
+      <div class="my-3 p-3 feature-text">
+       <h2 class="display-6 fw-bold feature-word" >아버지의 패션 테러를 <br>멈춰주세요.</h2>
+       <p class="lead subText feature-word">매일 입은 등산복, 기능성 티는 이제 그만!<br>이제 캐쥬얼하고, 클래식한 패션을 만들어보세요. </p>
       </div>
       <div class="feature">
         <div class="feature_img_div">
-          <img class="feature_img" src="../main/nomore.jpg" alt="stop!">
+          <img class="feature_img" src="../img/nomore.jpg" alt="stop!">
         </div>
       </div>
    </div>
@@ -85,50 +83,38 @@
 
   <div class="d-md-flex flex-md-equal w-100 my-md-3 ps-md-3">
     <div class="bg-light me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
-      <div class="my-3 p-3">
-       <h2 class="display-6">멋쟁이 아빠처럼</h2>
-       <p class="lead">편하게 멋있는 옷 입기!</p>
-      </div>
 
       <div class="feature">
-      <div class="feature_img">
-        <img class="feature_img" src="../main/nice.jpg" alt="stop!">
+        <div class="feature_img">
+          <img class="feature_img" src="../img/nice.jpg" alt="stop!">
+        </div>
+        </div>
+
+      <div class="my-3 p-3 feature-text">
+       <h2 class="display-6 fw-bold feature-word">아버지를 멋쟁이로 <br>바꿔주세요.</h2>
+       <p class="lead subText feature-word">아버지의 새로운 패션스타일을 만들어 드리고 싶으신가요?<br>단 6가지 질문으로 맞춤 스타일리스트를 매칭해드립니다.</p>
       </div>
-      </div>
+
+      
    </div>
   </div>
 
 
   <div class="d-md-flex flex-md-equal w-100 my-md-3 ps-md-3">
     <div class="bg-light me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
-      <div class="my-3 p-3">
-       <h2 class="display-6">스타일리스트 매칭</h2>
-       <p class="lead">And an even wittier subheading.</p>
+      <div class="my-3 p-3 feature-text">
+       <h2 class="display-6 fw-bold feature-word">아버지의 멋진 추억을 <br>만들어주세요.</h2>
+       <p class="lead subText feature-word">패셔니스타 아버지를 위한 화보집을 만들 수도,<br>소중한 가족을 위한 여행 추억을 만들 수도 있습니다.</p>
       </div>
 
       <div class="feature">
       <div class="feature_img">
-        <img class="feature_img" src="../main/match.jpg" alt="stop!">
+        <img class="feature_img" src="../img/match.jpg" alt="stop!">
       </div>
       </div>
    </div>
   </div>
 
-
-  <div class="d-md-flex flex-md-equal w-100 my-md-3 ps-md-3">
-    <div class="bg-light me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
-      <div class="my-3 p-3">
-       <h2 class="display-6">부모님과 자녀들간의 관계 형성</h2>
-       <p class="lead">And an even wittier subheading.</p>
-      </div>
-
-      <div class="feature">
-      <div class="feature_img">
-        <img class="feature_img" src="../main/love.jpg" alt="stop!">
-      </div>
-      </div>
-   </div>
-  </div>
 
   <div class="position-relative overflow-hidden p-3 p-md-5 m-md-3 text-center bg-light" id="end-block">
     <div class="col-md-6 p-lg-5 mx-auto my-5">
@@ -145,7 +131,7 @@
   <div class="row">
     <div class="col-12 col-md">
       <a class="py-2 d-none d-md-inline-block" href="#">
-        <img src="../main/047-house.png" alt="footer_icon" width="30" height="30">
+        <img src="../img/logo1-main.png" alt="footer_icon" width="60" height="auto" style="margin-left: -3px;">
       </a>
     </div>
 
