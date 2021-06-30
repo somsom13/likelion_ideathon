@@ -28,6 +28,11 @@
   text-underline-position: under;
 }
 
+.main-logo-div{
+  width:fit-content;
+  height: fit-content;
+}
+
 #main-logo{
   max-width:100%;
   height:auto;
@@ -49,13 +54,13 @@
   vertical-align: middle;
 }
 
-#title-block-text-div{
+#main-title-block-div{
   float:left;
   color:#fff;
   text-align: left;
 }
 
-.title-text{
+.main-title-text{
   margin-left:100px;
 }
 
@@ -99,10 +104,6 @@
   color:#fff;
 }
 
-/*
- * Dummy devices (replace them with your own or something else entirely!)
- */
-
 .newBtn{ 
   display:inline-block;
   width:250px;
@@ -137,7 +138,7 @@
   box-shadow:250px 0 0 0 rgba(0,0,0,0.315) inset;
 }
 
-#title-block{
+#first-block{
   background-image: url(../img/white.jpg);
   background-repeat: no-repeat;
   background-position: right center;
