@@ -3,8 +3,40 @@
 <head>
 	<title>Style</title>
 	<meta charset="utf-8">
+	<link href="question.css" rel="stylesheet" type="text/css" />
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.0/examples/product/">
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400&display=swap" rel="stylesheet">
+
+    <!-- Bootstrap core CSS -->
+    <link href="../Question/assets/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+    </style>
+    
+    <!-- Custom styles for this template -->
+    <link href="../home/home.css" rel="stylesheet">
+	<link href="style.css" rel="stylesheet">
+
 	<!-- 모바일 화면을 위한 메타데이터 -->
 	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	
 	<style type="text/css">
 		body {
 			color: black;
@@ -20,7 +52,7 @@
 		div.profile-aria{
 			/*레이아웃 설정*/
 			position:absolute;
-			margin-top: 50px;
+			margin-top: 100px;
 			top:80%;
 			left:50%;
 			transform:translate(-50%, -50%)
@@ -30,6 +62,8 @@
 			font-size: 35px;
 			margin-bottom: 50px;
 			margin-left: 25px;
+			margin-top:400px;
+			font-family:'Noto Sans KR',sans-serif;
 		}
 		li {
 			/*list 가로 배열*/
@@ -52,9 +86,9 @@
 			
 		}
 		.Btn{
-			border: 0;
+			border: none;
   			outline: 0;
-  			background: none;
+			background: none;
   			cursor: pointer;
 		}
 
@@ -76,26 +110,48 @@
 		}
 	</style>
 </head>
+
 <body bgcolor="white">
+
+	<!-- header : nav bar -->
+    <header class="site-header sticky-top py-1">
+		<nav class="container d-flex flex-column flex-md-row justify-content-between" >
+		  <a class="py-2 d-none d-md-inline-block main-logo-div" href="home.html">
+			<img src="../img/logo-new.png" id="main_logo" alt="메인로고" height="30" style="margin-top:-8px; margin-bottom:-10px;">
+		  </a>
+			<div class="nav col-lg-auto me-lg-auto mb-2 mb-md-0 nav-div">
+			  <a class="px-2 d-none d-md-inline-block nav-link nav-menu" href="#" style="margin-left: 30px;">Brand Story</a>
+			  <a class="px-2 d-none d-md-inline-block nav-link nav-menu" href="#">Style Check</a>    
+			</div>
+			<div id="search-div">
+			<form id="search-form">
+			  <input type="search-input" class="form-control" placeholder="Search..." aria-label="Search">
+			</form>
+			</div>
+			<a class="py-2 d-none d-md-inline-block nav-link nav-menu" style="margin-left:0px; " href="#">Join/Login</a>
+			<a class="py-2 d-none d-md-inline-block" href="#">
+			  <img src="../img/011-user.png" alt="마이페이지" width="30" height="30"></a>
+			
+		</nav>
+	  </header>
+
+	
 	<div>
 		<!-- 로고 -->
-		<div>
-			<p class="logo"><img class="navlogo" src="../Question/logo/logo.png" width="250" heigth="250" alt="로고"/></p>
-		</div>
 		<div class="profile-aria">
 			<!-- 텍스트 -->
-			<div>
-				<p class="tv">스타일 선택</p>
+			<div style=" margin-bottom:-200px;">
+				<p class="tv">스타일 선택<br><span style="font-size: 50%;">원하는 스타일을 3가지 이상 선택해주세요.</span></p>
 			</div>
 			<!-- 코디 리스트 -->
-			<div>
+			<div style="margin-bottom: 1600px;">
 				<ul>
 				<li>
 					<div class="profile">
                         
                         <div class="profile-card"></div>
 						<button class="Btn">
-							<img src="../Select/img/택1.png" width="150" height="200" alt ="프로필 이미지"/>
+							<img src="../Select/img/택1.png" width="150" height="200" alt ="프로필 이미지" />
 						</button>
 						
 						
@@ -314,11 +370,14 @@
 					</div>
 				</li>
 			</ul>
-			</div>
+			</div >
 			<!-- 프로필 관리 버튼 -->
 			<!-- <div class="button">
 				프로필 관리
 			</div> -->
+			<div id="button-div">
+			<a class="styleBtn" href="../home/stylist.html">스타일 선택 완료</a>
+			</div>
 		</div>
 	</div>
 

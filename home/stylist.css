@@ -116,6 +116,7 @@
 }
 
 .profile-sub{
+    margin-top:15px;
     display:inline-block;
     font-size: 13px;
     height:65px;
@@ -125,7 +126,7 @@
 
 .profile{
     position:absolute;
-    margin:8px 0 0 84px;
+    margin:0px 0 0 84px;
 }
 
 .profile-picture{
