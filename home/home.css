@@ -64,27 +64,36 @@
   margin-left:100px;
 }
 
+.block-wrapper{
+  display:flex; 
+  align-items: center; 
+  flex-direction: column;
+}
+
 .eng{
   font-family: 'Poppins', sans-serif;
 }
 
+.feature-wrapper{
+  position:relative;
+}
+
 .feature{
-  text-align: center;
   display: inline-block;
-  width: 500px;
-  height: 500px;
-  padding:0 10px; 
-  margin-left:50px; 
+  width: 400px;
+  height: 450px; 
   vertical-align: middle; 
-  text-align:center;
+  position:relative;
 }
 
 
 .feature_img_div{
-  display:table-cell;
-  vertical-align: middle;
-  position:relative;
-  top:50px;
+  position:absolute;
+  left:50%;
+  top:50%;
+  transform: translate(-50%,-50%);
+  width:400px;
+
 }
 
 .feature_img{
