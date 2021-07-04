@@ -25,17 +25,18 @@
 
 #top-block-wrap{
     position:relative;
+    left:50%;
+    transform: translateX(-50%);
     margin-top:40px;
     display:inline-flex;
-    margin-left:95px;
     height:150px;
+    text-align: center;
 }
 
 #top-block{
     top: 70px;
-    margin-left: 160px;
     margin-bottom: 50px;;
-    width: 400px;
+    width: fit-content;
     height: 140px;
     opacity: 1;
     color:#fff;
